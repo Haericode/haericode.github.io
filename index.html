@@ -40,8 +40,8 @@
                             <li><a href="library/identities.json">All identity labels</a></li>
                             <li><a href="library/diasporas.json">All diaspora labels</a></li>
                             <li><a href="library/jewish.json">All Jewish identities</a></li>
-                            <li><a href="#">Source code on Codeberg</a></li>
-                            <li><a href="#">Request features</a></li>
+                            <li><a href="https://github.com/Haericode/haericode.github.io">Source code on Github</a></li>
+                            <li><a href="https://github.com/Haericode/haericode.github.io/issues/new">Request features</a></li>
                             <li><a href="#forkhaericode">Port or fork Haericode</a></li>
                             <li><a href="#qna">Questions and answers</a></li>
                             <li><a href="#vnu">Versioning &amp; Updates</a></li>
@@ -160,11 +160,11 @@
                     </p>
                     <h3>Porting Haericode</h3>
                     <p>
-                        If you want to add Haericode compatibility to your website, head over to our Codeberg repository and download the <a href="#" target="_blank">ZIP file</a> that contains the basic Haericode structure.
+                        If you want to add Haericode compatibility to your website, head over to our Github repository and download the <a href="webpage/haericode.tar" target="_blank">tarball</a> that contains the basic Haericode structure.
                     </p>
                     <details>
                         <summary>
-                            <code>haericode.zip</code>
+                            <code>haericode.tar</code>
                         </summary>
                         <ul>
                             <li>index.html</li>
@@ -176,14 +176,14 @@
                         </ul>
                     </details>
                     <p>
-                        You can access a preview of the HTML file in this zip here: <a href="example.html" target="_blank">example.html</a>. Beware that such ZIP is essentially the skeleton of Haericode, containing the minimum code for it to work. The <code>haericode.js</code> present in the ZIP is the same as the one in the site you're in now, haericode.org (hosted on Codeberg).
+                        You can access a preview of the HTML file in this tarball here: <a href="example.html" target="_blank">example.html</a>. Beware that such tarball is essentially the skeleton of Haericode, containing the minimum code for it to work. The <code>haericode.js</code> present in the tarball is the same as the one in the site you're in now (hosted on Github).
                     </p>
                     <p>
-                        The same applies to the files in <code>library/</code>. What is present here but isn't in the ZIP file is this HTML page, its styling, and its code besides the core Haericode functionality. If you wish to replicate the interpreted output section, you're going to have to tinker with <code>webpage.js</code>, available in the Haericode Codeberg repository.
+                        The same applies to the files in <code>library/</code>. What is present here but isn't in the tarball is this HTML page, its styling, and its code besides the core Haericode functionality. If you wish to replicate the interpreted output section, you're going to have to tinker with <code>webpage.js</code>, available in the Haericode Github repository.
                     </p>
                     <h3>Forking Haericode</h3>
                     <p>
-                        To fork this project, head over to our Codeberg repository and do so. You download the entire repository (this site) that includes this current page and its code, or you can download only the core skeletal version of Haericode available in the ZIP file.
+                        To fork this project, head over to our Github repository and do so. You download the entire repository (this site) that includes this current page and its code, or you can download only the core skeletal version of Haericode available in the tarball.
                     </p>
                     <p>
                         The following is a small guide with helpful information for those wishing to fork.
@@ -195,10 +195,10 @@
                         If you want to add new (or remove) <b>metadata</b>, modify <code>metadata.json</code> by adding a new key to "types", similar to the existing keys, and making a new JSON file under <code>library/</code>, copying the structure of the already existing metadata JSON files. You do not need and should not modify the backend code (<code>haericode.js</code>) if you just want to modify the metadata. The interpreter will automatically recognize valid metadata changes since the metadata system is modular.
                     </p>
                     <p>
-                        Worth noting that in the ZIP file, <code>jewish.json</code> is just the current metadata-related file, and if you wish to, you can absolutely remove it. Same with the diaspora metadata, but keep in mind the diaspora metadata system is hardcoded, so you will have to tinker with the backend to remove it.
+                        Worth noting that in the tarball, <code>jewish.json</code> is just the current metadata-related file, and if you wish to, you can absolutely remove it. Same with the diaspora metadata, but keep in mind the diaspora metadata system is hardcoded, so you will have to tinker with the backend to remove it.
                     </p>
                      <p>
-                        If you want to create something completely new or change Haericode's syntax, you should probably just change the <b>backend</b> code, <code>haericode.js</code>. It is a tad messy, but it covers parsing, validating, and interpreting a Haericode input into an output. From this output, the frontend code decides what to do with it. In the case of this specific website and its frontend JavaScript (<code>webpage.js</code>), a fancy human-readable table is generated, but this is not included in the core Haericode ZIP file.
+                        If you want to create something completely new or change Haericode's syntax, you should probably just change the <b>backend</b> code, <code>haericode.js</code>. It is a tad messy, but it covers parsing, validating, and interpreting a Haericode input into an output. From this output, the frontend code decides what to do with it. In the case of this specific website and its frontend JavaScript (<code>webpage.js</code>), a fancy human-readable table is generated, but this is not included in the core Haericode tarball.
                     </p>
                     <p>
                         If you only want to modify the <b>frontend</b> (the interface) and not any of the backend, you probably don't want to fork Haericode, but instead port it. Haericode at its core consists of an interpreter, ontology and a JSON output. The user-facing input and user-facing output are beyond Haericode. If you JUST want to add Haericode to other projects, change the interface or style the user-facing output, forking as a whole is not needed.
