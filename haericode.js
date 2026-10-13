@@ -3,7 +3,11 @@
 
   const VERSION = 1;
 
-  const IDENTITIES_URL = "library/identities.json";
+  const IDENTITIES_URL = "library/identities.json"; 
+  /* 
+    You can also link it to the identities.json in our Github repository, it will always be up to date: 
+    "https://raw.githubusercontent.com/Haericode/haericode.github.io/refs/heads/main/library/identities.json" 
+  */
   const DIASPORAS_URL = "library/diasporas.json";
   const METADATA_URL = "library/metadata.json";
 
