@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "types": {
+    "DI": {
+      "name": "Diaspora",
+      "source": "diasporas"
+    },
+    "J": {
+      "name": "Jewish",
+      "source": "jewish.json"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Haericode Testing Area</title>
+    </head>
+
+    <body>
+        <center>
+            <h2>Haericode editor</h2>
+
+            <textarea id="code" spellcheck="false" placeholder="HC/..." cols=50 autofocus></textarea>
+
+            <br><br>
+
+            <div>
+                <button id="validate">Parse</button>
+                <button id="canonicalize">Canonicalize</button>
+            </div>
+
+            <p id="status"></p>
+
+            <h2>Output</h2>
+
+            <table bgcolor="#ddd" cellpadding="10">
+                <tr><td>
+                    <pre id="output">{}</pre>
+                </td></tr>
+            </table>
+
+            <br><br>
+        </center>
+
+        <script src="haericode.js"></script>
+        <script>
+
+const code = document.querySelector('#code');
+const status = document.querySelector('#status');
+const output = document.querySelector('#output');
+
+function validate() {
+    try {
+        const parsed = Haericode.parse(code.value);
+
+        status.className = 'ok';
+        status.textContent = 'Valid Haericode';
+
+        output.textContent =
+        JSON.stringify(
+            Haericode.inspect(parsed),
+                       null,
+                       2
+        );
+    }
+
+    catch (e) {
+        status.className = 'err';
+        status.textContent = e.message;
+        output.textContent = '{}';
+    }
+}
+
+function canonicalize() {
+    try {
+        const original = code.value;
+        const parsed = Haericode.parse(original);
+        const canonical = Haericode.canonicalize(parsed);
+
+        if (canonical === original) {
+            return;
+        }
+
+        code.value = canonical;
+
+        status.className = 'ok';
+        status.textContent = 'Canonicalized Haericode';
+    }
+
+    catch (e) {
+        status.className = 'err';
+        status.textContent = e.message;
+    }
+}
+
+document.querySelector('#validate').onclick =
+() => validate();
+
+document.querySelector('#canonicalize').onclick =
+() => canonicalize();
+
+validate();
+status.textContent = 'Awaiting Haericode input';
+
+        </script>
+    </body>
+</html>

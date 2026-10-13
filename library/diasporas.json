@@ -1,0 +1,794 @@
+{
+  "version": 1,
+  "defaultIdentity": "EU",
+  "identities": {
+    "US": {
+      "code": "US",
+      "name": "American"
+    },
+    "CA": {
+      "code": "CA",
+      "name": "Canadian"
+    },
+    "MX": {
+      "code": "MX",
+      "name": "Mexican"
+    },
+    "GT": {
+      "code": "GT",
+      "name": "Guatemalan"
+    },
+    "BZ": {
+      "code": "BZ",
+      "name": "Belizean"
+    },
+    "SV": {
+      "code": "SV",
+      "name": "Salvadoran"
+    },
+    "HN": {
+      "code": "HN",
+      "name": "Honduran"
+    },
+    "NI": {
+      "code": "NI",
+      "name": "Nicaraguan"
+    },
+    "CR": {
+      "code": "CR",
+      "name": "Costa Rican"
+    },
+    "PA": {
+      "code": "PA",
+      "name": "Panamanian"
+    },
+    "CU": {
+      "code": "CU",
+      "name": "Cuban"
+    },
+    "JM": {
+      "code": "JM",
+      "name": "Jamaican"
+    },
+    "HT": {
+      "code": "HT",
+      "name": "Haitian"
+    },
+    "DO": {
+      "code": "DO",
+      "name": "Dominican"
+    },
+    "BS": {
+      "code": "BS",
+      "name": "Bahamian"
+    },
+    "BB": {
+      "code": "BB",
+      "name": "Barbadian"
+    },
+    "TT": {
+      "code": "TT",
+      "name": "Trinidadian and Tobagonian"
+    },
+    "GD": {
+      "code": "GD",
+      "name": "Grenadian"
+    },
+    "LC": {
+      "code": "LC",
+      "name": "Saint Lucian"
+    },
+    "VC": {
+      "code": "VC",
+      "name": "Vincentian"
+    },
+    "AG": {
+      "code": "AG",
+      "name": "Antiguan and Barbudan"
+    },
+    "KN": {
+      "code": "KN",
+      "name": "Kittitian and Nevisian"
+    },
+    "DM": {
+      "code": "DM",
+      "name": "Dominican"
+    },
+    "VI": {
+      "code": "VI",
+      "name": "Virgin Islander"
+    },
+    "PR": {
+      "code": "PR",
+      "name": "Puerto Rican"
+    },
+    "BM": {
+      "code": "BM",
+      "name": "Bermudian"
+    },
+    "KY": {
+      "code": "KY",
+      "name": "Caymanian"
+    },
+    "TC": {
+      "code": "TC",
+      "name": "Tristan da Cunha Islander"
+    },
+    "AI": {
+      "code": "AI",
+      "name": "Anguillian"
+    },
+    "MS": {
+      "code": "MS",
+      "name": "Montserratian"
+    },
+    "AW": {
+      "code": "AW",
+      "name": "Aruban"
+    },
+    "CW": {
+      "code": "CW",
+      "name": "Curaçaoan"
+    },
+    "SX": {
+      "code": "SX",
+      "name": "Sint Maartener"
+    },
+    "BQ": {
+      "code": "BQ",
+      "name": "Bonairean"
+    },
+    "GP": {
+      "code": "GP",
+      "name": "Guadeloupean"
+    },
+    "MQ": {
+      "code": "MQ",
+      "name": "Martinican"
+    },
+    "BL": {
+      "code": "BL",
+      "name": "Saint Barthélemois"
+    },
+    "MF": {
+      "code": "MF",
+      "name": "Saint Martin"
+    },
+    "CO": {
+      "code": "CO",
+      "name": "Colombian"
+    },
+    "VE": {
+      "code": "VE",
+      "name": "Venezuelan"
+    },
+    "GY": {
+      "code": "GY",
+      "name": "Guyanese"
+    },
+    "SR": {
+      "code": "SR",
+      "name": "Surinamese"
+    },
+    "BR": {
+      "code": "BR",
+      "name": "Brazilian"
+    },
+    "AR": {
+      "code": "AR",
+      "name": "Argentine"
+    },
+    "CL": {
+      "code": "CL",
+      "name": "Chilean"
+    },
+    "PE": {
+      "code": "PE",
+      "name": "Peruvian"
+    },
+    "BO": {
+      "code": "BO",
+      "name": "Bolivian"
+    },
+    "PY": {
+      "code": "PY",
+      "name": "Paraguayan"
+    },
+    "UY": {
+      "code": "UY",
+      "name": "Uruguayan"
+    },
+    "EC": {
+      "code": "EC",
+      "name": "Ecuadorian"
+    },
+    "AU": {
+      "code": "AU",
+      "name": "Australian"
+    },
+    "NZ": {
+      "code": "NZ",
+      "name": "New Zealander"
+    },
+    "PG": {
+      "code": "PG",
+      "name": "Papuan"
+    },
+    "FJ": {
+      "code": "FJ",
+      "name": "Fijian"
+    },
+    "SB": {
+      "code": "SB",
+      "name": "Solomon Islander"
+    },
+    "VU": {
+      "code": "VU",
+      "name": "New Hebridean"
+    },
+    "WS": {
+      "code": "WS",
+      "name": "Samoan"
+    },
+    "TO": {
+      "code": "TO",
+      "name": "Tongan"
+    },
+    "TV": {
+      "code": "TV",
+      "name": "Ellice Islander"
+    },
+    "KI": {
+      "code": "KI",
+      "name": "Gilbert Islander"
+    },
+    "NR": {
+      "code": "NR",
+      "name": "Nauruan"
+    },
+    "PW": {
+      "code": "PW",
+      "name": "Palauan"
+    },
+    "MH": {
+      "code": "MH",
+      "name": "Marshall Islander"
+    },
+    "FM": {
+      "code": "FM",
+      "name": "Micronesian"
+    },
+    "AS": {
+      "code": "AS",
+      "name": "American Samoan"
+    },
+    "GU": {
+      "code": "GU",
+      "name": "Guamanian"
+    },
+    "MP": {
+      "code": "MP",
+      "name": "Marianan"
+    },
+    "CK": {
+      "code": "CK",
+      "name": "Cook Islander"
+    },
+    "NU": {
+      "code": "NU",
+      "name": "Savage Islander"
+    },
+    "TK": {
+      "code": "TK",
+      "name": "Union Islander"
+    },
+    "PF": {
+      "code": "PF",
+      "name": "French Polynesian"
+    },
+    "NC": {
+      "code": "NC",
+      "name": "New Caledonian"
+    },
+    "WF": {
+      "code": "WF",
+      "name": "Wallisian"
+    },
+    "PN": {
+      "code": "PN",
+      "name": "Pitcairn Islander"
+    },
+    "HI": {
+      "code": "HI",
+      "name": "Hawaiian"
+    },
+    "EI": {
+      "code": "EI",
+      "name": "Easter Islander"
+    },
+    "GAL": {
+      "code": "GAL",
+      "name": "Galápaguan"
+    },
+    "ID": {
+      "code": "ID",
+      "name": "Indonesian"
+    },
+    "MY": {
+      "code": "MY",
+      "name": "Malaysian"
+    },
+    "SG": {
+      "code": "SG",
+      "name": "Singaporean"
+    },
+    "BN": {
+      "code": "BN",
+      "name": "Bruneian"
+    },
+    "PH": {
+      "code": "PH",
+      "name": "Filipino"
+    },
+    "TL": {
+      "code": "TL",
+      "name": "East Timorese"
+    },
+    "TH": {
+      "code": "TH",
+      "name": "Thai"
+    },
+    "VN": {
+      "code": "VN",
+      "name": "Vietnamese"
+    },
+    "KH": {
+      "code": "KH",
+      "name": "Cambodian"
+    },
+    "LA": {
+      "code": "LA",
+      "name": "Laotian"
+    },
+    "MM": {
+      "code": "MM",
+      "name": "Burmese"
+    },
+    "CN": {
+      "code": "CN",
+      "name": "Chinese"
+    },
+    "TW": {
+      "code": "TW",
+      "name": "Taiwanese"
+    },
+    "HK": {
+      "code": "HK",
+      "name": "Hong Konger"
+    },
+    "MO": {
+      "code": "MO",
+      "name": "Macanese"
+    },
+    "MN": {
+      "code": "MN",
+      "name": "Mongolian"
+    },
+    "KP": {
+      "code": "KP",
+      "name": "North Korean"
+    },
+    "KR": {
+      "code": "KR",
+      "name": "South Korean"
+    },
+    "JP": {
+      "code": "JP",
+      "name": "Japanese"
+    },
+    "IN": {
+      "code": "IN",
+      "name": "Indian"
+    },
+    "PK": {
+      "code": "PK",
+      "name": "Pakistani"
+    },
+    "BD": {
+      "code": "BD",
+      "name": "Bangladeshi"
+    },
+    "LK": {
+      "code": "LK",
+      "name": "Ceylonese"
+    },
+    "NP": {
+      "code": "NP",
+      "name": "Nepalese"
+    },
+    "BT": {
+      "code": "BT",
+      "name": "Bhutanese"
+    },
+    "MV": {
+      "code": "MV",
+      "name": "Maldivean"
+    },
+    "AF": {
+      "code": "AF",
+      "name": "Afghan"
+    },
+    "KZ": {
+      "code": "KZ",
+      "name": "Kazakhstani"
+    },
+    "UZ": {
+      "code": "UZ",
+      "name": "Uzbek"
+    },
+    "TM": {
+      "code": "TM",
+      "name": "Turkmen"
+    },
+    "TJ": {
+      "code": "TJ",
+      "name": "Tajik"
+    },
+    "KG": {
+      "code": "KG",
+      "name": "Kirghiz"
+    },
+    "TR": {
+      "code": "TR",
+      "name": "Turkish"
+    },
+    "AZ": {
+      "code": "AZ",
+      "name": "Azerbaijani"
+    },
+    "IR": {
+      "code": "IR",
+      "name": "Iranian"
+    },
+    "IQ": {
+      "code": "IQ",
+      "name": "Iraqi"
+    },
+    "SY": {
+      "code": "SY",
+      "name": "Syrian"
+    },
+    "LB": {
+      "code": "LB",
+      "name": "Lebanese"
+    },
+    "IL": {
+      "code": "IL",
+      "name": "Israeli"
+    },
+    "PS": {
+      "code": "PS",
+      "name": "Palestinian"
+    },
+    "JO": {
+      "code": "JO",
+      "name": "Jordanian"
+    },
+    "SA": {
+      "code": "SA",
+      "name": "Saudi Arabian"
+    },
+    "YE": {
+      "code": "YE",
+      "name": "Yemeni"
+    },
+    "OM": {
+      "code": "OM",
+      "name": "Omani"
+    },
+    "AE": {
+      "code": "AE",
+      "name": "Emirati"
+    },
+    "QA": {
+      "code": "QA",
+      "name": "Qatari"
+    },
+    "BH": {
+      "code": "BH",
+      "name": "Bahraini"
+    },
+    "KW": {
+      "code": "KW",
+      "name": "Kuwaiti"
+    },
+    "EG": {
+      "code": "EG",
+      "name": "Egyptian"
+    },
+    "LY": {
+      "code": "LY",
+      "name": "Libyan"
+    },
+    "TN": {
+      "code": "TN",
+      "name": "Tunisian"
+    },
+    "AL": {
+      "code": "AL",
+      "name": "Algerian"
+    },
+    "PI": {
+      "code": "PI",
+      "name": "Pied-noir"
+    },
+    "MA": {
+      "code": "MA",
+      "name": "Moroccan"
+    },
+    "PM": {
+      "code": "PM",
+      "name": "Saint-Pierrais and Miquelonnais"
+    },
+    "BON": {
+      "code": "BON",
+      "name": "Bonairean"
+    },
+    "SAB": {
+      "code": "SAB",
+      "name": "Saban"
+    },
+    "STA": {
+      "code": "STA",
+      "name": "Statian"
+    },
+    "FK": {
+      "code": "FK",
+      "name": "Falklander"
+    },
+    "SH": {
+      "code": "SH",
+      "name": "Saint Helenian"
+    },
+    "AC": {
+      "code": "AC",
+      "name": "Ascension Islander"
+    },
+    "SJ": {
+      "code": "SJ",
+      "name": "Svalbarder"
+    },
+    "GF": {
+      "code": "GF",
+      "name": "French Guianese"
+    },
+    "EH": {
+      "code": "EH",
+      "name": "Western Saharan"
+    },
+    "SD": {
+      "code": "SD",
+      "name": "Sudanese"
+    },
+    "SS": {
+      "code": "SS",
+      "name": "South Sudanese"
+    },
+    "MR": {
+      "code": "MR",
+      "name": "Mauritanian"
+    },
+    "ML": {
+      "code": "ML",
+      "name": "Malian"
+    },
+    "NE": {
+      "code": "NE",
+      "name": "Nigerien"
+    },
+    "TD": {
+      "code": "TD",
+      "name": "Chadian"
+    },
+    "SN": {
+      "code": "SN",
+      "name": "Senegalese"
+    },
+    "GM": {
+      "code": "GM",
+      "name": "Gambian"
+    },
+    "GW": {
+      "code": "GW",
+      "name": "Bissau-Guinean"
+    },
+    "GN": {
+      "code": "GN",
+      "name": "Guinean"
+    },
+    "SL": {
+      "code": "SL",
+      "name": "Sierra Leonean"
+    },
+    "LR": {
+      "code": "LR",
+      "name": "Liberian"
+    },
+    "CI": {
+      "code": "CI",
+      "name": "Ivorian"
+    },
+    "GH": {
+      "code": "GH",
+      "name": "Ghanaian"
+    },
+    "TG": {
+      "code": "TG",
+      "name": "Togolese"
+    },
+    "BJ": {
+      "code": "BJ",
+      "name": "Dahomeyan"
+    },
+    "BF": {
+      "code": "BF",
+      "name": "Upper Voltan"
+    },
+    "NG": {
+      "code": "NG",
+      "name": "Nigerian"
+    },
+    "CV": {
+      "code": "CV",
+      "name": "Cape Verdean"
+    },
+    "CM": {
+      "code": "CM",
+      "name": "Cameroonian"
+    },
+    "CF": {
+      "code": "CF",
+      "name": "Central African"
+    },
+    "GQ": {
+      "code": "GQ",
+      "name": "Equatorial Guinean"
+    },
+    "GA": {
+      "code": "GA",
+      "name": "Gabonese"
+    },
+    "ST": {
+      "code": "ST",
+      "name": "São Toméan"
+    },
+    "AO": {
+      "code": "AO",
+      "name": "Angolan"
+    },
+    "CON": {
+      "code": "CON",
+      "name": "Congolese"
+    },
+    "ET": {
+      "code": "ET",
+      "name": "Ethiopian"
+    },
+    "ER": {
+      "code": "ER",
+      "name": "Eritrean"
+    },
+    "DJ": {
+      "code": "DJ",
+      "name": "Djiboutian"
+    },
+    "SO": {
+      "code": "SO",
+      "name": "Somali"
+    },
+    "KE": {
+      "code": "KE",
+      "name": "Kenyan"
+    },
+    "UG": {
+      "code": "UG",
+      "name": "Ugandan"
+    },
+    "RW": {
+      "code": "RW",
+      "name": "Rwandan"
+    },
+    "BI": {
+      "code": "BI",
+      "name": "Burundian"
+    },
+    "TZ": {
+      "code": "TZ",
+      "name": "Tanzanian"
+    },
+    "MW": {
+      "code": "MW",
+      "name": "Malawian"
+    },
+    "ZM": {
+      "code": "ZM",
+      "name": "Zambian"
+    },
+    "ZW": {
+      "code": "ZW",
+      "name": "Zimbabwean"
+    },
+    "RH": {
+      "code": "RH",
+      "name": "Rhodesian"
+    },
+    "MZ": {
+      "code": "MZ",
+      "name": "Mozambican"
+    },
+    "NA": {
+      "code": "NA",
+      "name": "Namibian"
+    },
+    "BW": {
+      "code": "BW",
+      "name": "Botswanan"
+    },
+    "SZ": {
+      "code": "SZ",
+      "name": "Swazilander"
+    },
+    "LS": {
+      "code": "LS",
+      "name": "Basutolandian"
+    },
+    "ZA": {
+      "code": "ZA",
+      "name": "South African"
+    },
+    "MG": {
+      "code": "MG",
+      "name": "Malagasy"
+    },
+    "MU": {
+      "code": "MU",
+      "name": "Mauritian"
+    },
+    "SC": {
+      "code": "SC",
+      "name": "Seychellois"
+    },
+    "KM": {
+      "code": "KM",
+      "name": "Comorian"
+    },
+    "RE": {
+      "code": "RE",
+      "name": "Réunionese"
+    },
+    "YT": {
+      "code": "YT",
+      "name": "Mahoran"
+    },
+    "IO": {
+      "code": "IO",
+      "name": "Chagossian"
+    },
+    "CC": {
+      "code": "CC",
+      "name": "Cocos Islander"
+    },
+    "CX": {
+      "code": "CX",
+      "name": "Christmas Islander"
+    },
+    "NF": {
+      "code": "NF",
+      "name": "Norfolk Islander"
+    },
+    "SOH": {
+      "code": "SOH",
+      "name": "Somalilander"
+    }
+  }
+}

@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Haericode</title>
+
+        <link rel="icon" href="webpage/haericode.svg" type="image/svg+xml">
+        <link rel="stylesheet" href="webpage/style.css" />
+
+        <meta name="description" content="Documentation, testing area, interpretation, cheatsheet, links, guides, lists and searching.">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Haericode">
+        <meta property="og:description" content="Documentation, testing area, interpretation, cheatsheet, links, guides, lists and searching.">
+    </head>
+
+    <body>
+        <main class="site-layout">
+            <!-- Left -->
+            <aside class="sidebar sidebar-left">
+                    <section class="card site-header">
+                        <img src="webpage/haericode.svg" alt="Haericode symbol" title="Haericode symbol. Depicted: Savage's Head Affronty by Graham Johnston, 1909.">
+                        <h1>Haericode</h1>
+                        <p class="muted p1">
+                            The Official Haericode Website
+                        </p>
+                        <p class="muted p2">
+                            Documentation, testing area, interpretation, cheatsheet, links, guides, lists and searching.
+                        </p>
+                    </section>
+
+                    <section class="card sidebar-image-card">
+                        <img id="photo" src="" alt="" />
+                    </section>
+
+                    <section class="card links-card">
+                        <h2 class="mobile-last">Links</h2>
+                        <ul>
+                            <li><a href="#introduction">Building a Haericode</a></li>
+                            <li><a href="library/identities.json">All identity labels</a></li>
+                            <li><a href="library/diasporas.json">All diaspora labels</a></li>
+                            <li><a href="library/jewish.json">All Jewish identities</a></li>
+                            <li><a href="#">Source code on Codeberg</a></li>
+                            <li><a href="#">Request features</a></li>
+                            <li><a href="#forkhaericode">Port or fork Haericode</a></li>
+                            <li><a href="#qna">Questions and answers</a></li>
+                            <li><a href="#vnu">Versioning &amp; Updates</a></li>
+                        </ul>
+                    </section>
+
+                    <section class="card footer">
+                        <p class="muted">By a European for Europeans</p>
+                    </section>
+            </aside>
+
+            <!-- Center -->
+            <main class="content">
+                <section class="card">
+                    <label for="code"> Haericode editor </label>
+                    <textarea id="code" spellcheck="false" autofocus placeholder="HC/..."></textarea>
+                    <div class="row" style="margin-top: 10px">
+                        <button id="validate">Validate &amp; parse</button>
+                        <button id="canonicalize">Canonicalize</button>
+                        <button id="status"></button>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <h2>Interpreted output</h2>
+                    <div id="human-output"></div>
+                </section>
+
+                <section class="card">
+                    <h2>JSON output</h2>
+                    <details id="jsonOutput" open>
+                        <summary class="muted">Raw JSON output generated on the provided Haericode</summary>
+                        <pre id="output">{}</pre>
+                    </details>
+                </section>
+
+                <section class="card">
+                    <h2>What is Haericode?</h2>
+                    <p>Haericode is a modular, open source, ontological, standardized, simple language for encoding, representing and interpreting European ethnic, regional, cultural, national, ethnolinguistic, ethnoreligious, historical and diasporical identities with a shareable, non-unique, compact, portable, machine-readable, human-interpretable string: a heritage code.</p>
+                </section>
+
+                <section class="card" id="introduction">
+                    <h2>How to build a Haericode</h2>
+                    <p>
+                        All codes start with <code>HC/</code>, followed by its contents. Each part is separated by <code>/</code>, the slash.
+                    </p>
+                    <h3>1. Add identities</h3>
+                    <p>
+                        The basic form is <code>HC/percentage:CODE</code>. For example: <code>HC/100:DE</code> means <b>100% German</b>. You can combine several identities: <code>HC/25:DE/25:EN/25:IE/25:PL</code>. Percentages must add up to 100%.
+                    </p>
+                    <p>
+                        We aim for maximum inclusivity and flexibility, and thus the list of available identities is huge and encompasses a very broad range of European ethnic, regional, linguistic, historical, national, and even diasporical labels you can use to define your identity.
+                    </p>
+                    <p>
+                        Use the search feature to find the code for your desired identity. You can search by name, code, alias, or classification.
+                    </p>
+                    <h3>2. Broader identities</h3>
+                    <p>
+                        Broader identities are a way of expressing two or more identities in a hierarchy. Most identities in Haericode have relations with other identities, and these relations can be two different types: Classifications and broader identities.
+                    </p>
+                    <p>
+                        For example, someone from Normandy may be deeply proud of their Norman identity, while still acknowledging their French national or ethnic identity.
+                    </p>
+                    <p>
+                        To respect this kind of situation, we offer a way of expressing such in the following manner: <code>(specialized identity)-(broader identity)</code>. For example, <code>HC/100:NOR-FR</code>, which means <b>100% Norman, French</b>, signifies French identity while respecting a specialized Norman regional/historical/ethnic (sub)identity. It must be noted though that Norman has French as an available broader identity, but not, say, Spanish, so there is no such thing as <code>NOR-ES</code>.
+                    </p>
+                    <p>
+                        We recognize that national, ethnic and regional identity labels in Europe can be a source of heated discussion. Because of this, it is not obligatory to provide a broader identity. Someone from Lombardy may not identify with the identity Italian, even though Lombard has Italian as an available broader identity. In this situation, simply <code>LOM</code> may be used just fine, and the Lombard identity will not associate itself with <code>IT</code>.
+                    </p>
+                    <p>
+                        You can view and select broader identities or the lack of such while searching for identities using the search feature.
+                    </p>
+                    <h3>3. Parentage system</h3>
+                    <p>
+                        If you are not sure about the exact percentage of your ethnic makeup, you can use the parentage system instead. Through such, you can describe ancestry through parents using <code>^P</code> (father) and <code>^M</code> (mother).
+                    </p>
+                    <p>
+                        For example: <code>HC/^P(50:DE/50:PL)/^M(50:IE/50:EN)</code>. The percentages inside each parent describe that parent's ancestry.
+                    </p>
+                    <p>
+                        You can continue through multiple generations: <code>^PP</code> = father's father, <code>^PM</code> = father's mother, <code>^MP</code> = mother's father, <code>^MM</code> = mother's mother. The system will parse the parentage information and do the math, outputting a neat derived composition.
+                    </p>
+                    <h3>4. Optional metadata</h3>
+                    <p>
+                        Haericode also provides the option of adding metadata to a code. These are always added at the end and do not influence the ancestry composition at all, meaning they do not contribute toward the 100% ancestry total.
+                    </p>
+                    <p>
+                        Currently, there are two kinds of metadata: diasporical identity: <code>#DI</code>, and Jewish identity: <code>#J</code>.
+                    </p>
+                    <p>
+                        Diasporical identity is to be optionally used for Europeans that live outside Europe (commonly referred to as "White people"), for example in the Americas, Oceania or Africa. The syntax is <code>#DI:(identity code)-(non-European country code)</code>. Here are some common examples: <code>#DI:EN-AU</code> (English Australian), <code>#DI:IT-US</code> (Italian American), <code>#DI:ES-AR</code> (Spanish Argentine), and <code>#DI:NL-ZA</code> (Dutch South African, although using <code>AF</code> (Afrikaner) would be more natural).
+                    </p>
+                    <p>
+                        Jewish identity can be used to indicate identities like Sephardic (<code>#J:SEF</code>) or Ashkenazi (<code>#J:ASH</code>), among others. See all the identities for these metadata in the sidebar. You can also include multiple metadata items: <code>HC/40:EN/60:DE/#J:ASH/#DI:EU-US</code>.
+                    </p>
+                    <h3>5. Additional features</h3>
+                    <p>
+                        If you are uncertain about a specific percentage, you can put an exclamation mark before the percentage number: <code>HC/!7:GB/13:DE/80:FR</code>. These are markers, and they are part of the Haericode syntax and are interpreted separately from the percentage itself.
+                    </p>
+                    <p>
+                        You can also use <code>?</code> when part of your ancestry is unknown: <code>HC/70:DE/20:PL/10:?</code>.
+                    </p>
+                    <h3>6. Foreign identities</h3>
+                    <p>
+                        Since Haericode solely focuses on European identities, non-European identities (which are exceptional cases) are represented using broad terms and they begin with "<code>@</code>", like <code>@AF</code> or <code>@IN</code>. Use the search feature to discover these foreign identities and their aliases if you need to use them.
+                    </p>
+                </section>
+
+                <section class="card" id="forkhaericode">
+                    <h2>Port or fork Haericode</h2>
+                    <p>
+                        Do you want to add Haericode compatibility to your website, or fork it and create something new? This is where you will see how to do so.
+                    </p>
+                    <p>
+                        The system is really simple. The core consists of a big JS file as the backend (<code>haericode.js</code>), a frontend of roughly 50 JS lines, and a really simple HTML structure, besides the JSONs that store the ontology.
+                    </p>
+                    <h3>Porting Haericode</h3>
+                    <p>
+                        If you want to add Haericode compatibility to your website, head over to our Codeberg repository and download the <a href="#" target="_blank">ZIP file</a> that contains the basic Haericode structure.
+                    </p>
+                    <details>
+                        <summary>
+                            <code>haericode.zip</code>
+                        </summary>
+                        <ul>
+                            <li>index.html</li>
+                            <li>haericode.js</li>
+                            <li><span class="muted">library/ </span>identities.json</li>
+                            <li><span class="muted">library/ </span>metadata.json</li>
+                            <li><span class="muted">library/ </span>diasporas.json</li>
+                            <li><span class="muted">library/ </span>jewish.json</li>
+                        </ul>
+                    </details>
+                    <p>
+                        You can access a preview of the HTML file in this zip here: <a href="example.html" target="_blank">example.html</a>. Beware that such ZIP is essentially the skeleton of Haericode, containing the minimum code for it to work. The <code>haericode.js</code> present in the ZIP is the same as the one in the site you're in now, haericode.org (hosted on Codeberg).
+                    </p>
+                    <p>
+                        The same applies to the files in <code>library/</code>. What is present here but isn't in the ZIP file is this HTML page, its styling, and its code besides the core Haericode functionality. If you wish to replicate the interpreted output section, you're going to have to tinker with <code>webpage.js</code>, available in the Haericode Codeberg repository.
+                    </p>
+                    <h3>Forking Haericode</h3>
+                    <p>
+                        To fork this project, head over to our Codeberg repository and do so. You download the entire repository (this site) that includes this current page and its code, or you can download only the core skeletal version of Haericode available in the ZIP file.
+                    </p>
+                    <p>
+                        The following is a small guide with helpful information for those wishing to fork.
+                    </p>
+                    <p>
+                        To modify identities, their codes, labels, relationships and aliases, you only need to modify <code>identities.json</code>. For diasporas, keeping their exact functionality but modifying them, <code>diasporas.json</code>. For Jewish identities, <code>jewish.json</code>.
+                    </p>
+                    <p>
+                        If you want to add new (or remove) <b>metadata</b>, modify <code>metadata.json</code> by adding a new key to "types", similar to the existing keys, and making a new JSON file under <code>library/</code>, copying the structure of the already existing metadata JSON files. You do not need and should not modify the backend code (<code>haericode.js</code>) if you just want to modify the metadata. The interpreter will automatically recognize valid metadata changes since the metadata system is modular.
+                    </p>
+                    <p>
+                        Worth noting that in the ZIP file, <code>jewish.json</code> is just the current metadata-related file, and if you wish to, you can absolutely remove it. Same with the diaspora metadata, but keep in mind the diaspora metadata system is hardcoded, so you will have to tinker with the backend to remove it.
+                    </p>
+                     <p>
+                        If you want to create something completely new or change Haericode's syntax, you should probably just change the <b>backend</b> code, <code>haericode.js</code>. It is a tad messy, but it covers parsing, validating, and interpreting a Haericode input into an output. From this output, the frontend code decides what to do with it. In the case of this specific website and its frontend JavaScript (<code>webpage.js</code>), a fancy human-readable table is generated, but this is not included in the core Haericode ZIP file.
+                    </p>
+                    <p>
+                        If you only want to modify the <b>frontend</b> (the interface) and not any of the backend, you probably don't want to fork Haericode, but instead port it. Haericode at its core consists of an interpreter, ontology and a JSON output. The user-facing input and user-facing output are beyond Haericode. If you JUST want to add Haericode to other projects, change the interface or style the user-facing output, forking as a whole is not needed.
+                    </p>
+                </section>
+
+                <section class="card" id="qna">
+                    <h2>Questions and answers</h2>
+                    <p>
+                        Before contacting anyone involved in the project to clarify a doubt of yours, please make sure that your question isn't answered here already.
+                    </p>
+                    <details>
+                        <summary>What does "identity" mean?</summary>
+                        <p>
+                            Identity is any selectable code. By itself, it refers to only those in <code>identities.json</code>. Jewish identity can mean either one of the identities in <code>identities.json</code> that is classified under Jewish (<code>J*</code>) or one of the metadata identities in <code>jewish.json</code>. Diasporical identity refers to one of the country demonyms in <code>diasporas.json</code> that you can use to combine such with an identity and form composite metadata identities like English Canadian, Italian Argentine, Scottish Australian, Polish American, etc.
+                        </p>
+                        <p>
+                            These are technical definitions for the purposes of Haericode and do not imply that every entry is an ethnicity or that every identity is universally recognized as a distinct social category.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>How do you define what is and isn't an identity?</summary>
+                        <p>
+                            An entry is included when there is sufficient historical, cultural, linguistic, ethnographic or civic basis for treating it as a distinct identity that a European could plausibly identify their heritage as, at our discretion. Therefore, we do not require an identity to be an ethnicity, nationality, or officially recognized minority in a country. Inclusion also doesn't imply that an identity is universally accepted as mutually exclusive from related identities or objectively "real" academically.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Why simultaneously include ethnicities, regional demonyms and nationalities?</summary>
+                        <p>
+                            Because the goal of Haericode is to be maximally inclusive (within European contexts). Hence, our identity list is not to be an academic list of European ethnic groups, but rather a semi-exhaustive directory of all plausibly selectable identities a European might identify as, leaving it up to the developer or reader to decide how to use this data.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Who counts as European?</summary>
+                        <p>
+                            That is a good question. There is no objective answer to this millennia-old question, and there are myriad interpretations of what Europe is and where it ends, depending on who you ask. Beyond Ukraine and Greece, the borders of Europe are blurry, and we choose not to define Europe rigidly beyond that. Instead, Europe is broadly where Europeans live, something much easier to define.
+                        </p>
+                        <p style="font-weight:550">
+                            We classify all native Romance, Germanic, Slavic, Greek, Albanian, Celtic, Baltic and Kartvelian-speaking peoples as European, additionally most native Uralic-speaking peoples, the Basque, Maltese, Gagauz, and some Jews. Outside of Eurasia, diasporical European communities in the Americas, Oceania and Africa, colloquially referred to as "White", are also considered European.
+                        </p>
+                        <p>
+                            You could argue this is arbitrary, but everybody has a different definition of who does and does not count as European. This is Haericode's definition.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Why is there no "White American" but there is Québécois?</summary>
+                        <p>
+                            Because "White American" is a very broad demographic category that can include a myriad of European identities and doesn't really specify one's particular European ancestry. The same goes for White Australian, White Canadian, etc. These are diasporical identities that can be formed compositely with metadata. Québécois on the other hand, like Afrikaner, are also diasporical identities but are included as regular identities because they are distinct European ethnicities capable of being isolated as one's ancestral origins.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>What does "broader identity" mean?</summary>
+                        <p>
+                            A broader identity is an identity that is hierarchically related to, encompasses, or provides a wider context for another identity, and they serve to better represent people that have multiple non-exclusive identities. These are defined in <code>identities.json</code> and are stackable. Since this topic can become extremely heated, all broader identities are completely optional.
+                        </p>
+                        <p>
+                            You can see them when adding an identity using the search feature.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>What do the classifications mean?</summary>
+                        <p>
+                            Classifications describe broad characteristics or groupings associated with an identity. They are technically also identities and selectable, but generally not meant to be used. They can be linguistic, geographic or cultural, and one identity can have more than one. They are neither mutually exclusive nor optional.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Why are some historical identities included?</summary>
+                        <p>
+                            Historical identities are generally avoided unless they're capable of being isolated as a contemporary European's ancestral origins. For example, many people in the Baltics have ancestry easily traceable to now-extinct Baltic tribes or Baltic Germans, and many Europeans in the New World only know they have Yugoslav or Austro-Hungarian ancestors, but not exactly from where within those former states.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Where are the Turkic peoples of Europe?</summary>
+                        <p>
+                            Haericode does not consider Turkic peoples as European.
+                        </p>
+                        <p>
+                            For the Gagauz, an exceptional case is made because, despite their Turkic language, they have gone through extensive historical integration into the European ethnocultural sphere religiously, culturally, genetically, ethnically and ethnogenetically in southeastern Europe and Moldova. For these reasons, the Gagauz are the only Turkic-speaking people that are considered European by Haericode.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Where are the Gypsy/Roma people?</summary>
+                        <p>
+                            Haericode does not consider Gypsies as European, even though they are present in Europe extensively. If you wish to use such identity in a Haericode, its code is <code>@GY</code>.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Is this political?</summary>
+                        <p>
+                            Everything is politic<span style="color:#f3b61f">λ</span>l.
+                        </p>
+                    </details>
+                </section>
+
+                <section class="card" id="vnu">
+                    <h2 class="mobile-last">Versioning &amp; Updates</h2>
+                    <p>
+                        Haericode is not a project meant to be constantly changing. There are no expected updates coming to Haericode's backend, it is meant to be stable. If any change ever occurs though, backwards compatibility will always be a top priority. The ontology though may expand, but codes and their relationships will likely not be modified or deleted at all, only new identities may be added. The version of each JSON file will appear on top of such file.
+                    </p>
+                </section>
+            </main>
+
+            <!-- Right -->
+            <aside class="sidebar sidebar-right">
+                    <section class="card identity-search">
+                        <h2>Find an identity</h2>
+                        <p class="muted">
+                            Search by name, code, or alias. Select an identity to see its relationships and insert its
+                            code.
+                        </p>
+                        <input
+                            id="identity-search"
+                            type="search"
+                            autocomplete="off"
+                            spellcheck="false"
+                            placeholder="Search identities…"
+                        />
+                    </section>
+
+                    <section class="card">
+                        <h2>Quick examples</h2>
+                        <p class="muted">
+                            Select one of these examples and paste it into the Haericode input to see for yourself how
+                            the syntax works.
+                        </p>
+
+                        <select id="examples">
+                            <option value="">Choose an example…</option>
+                            <option>HC/100:DE</option>
+                            <option>HC/60:EN/30:IE/5:FR/5:IS</option>
+                            <option>HC/35:ES/25:IT/20:GR/20:HR</option>
+                            <option>HC/40:SE/25:FN/20:LV/10:KVN/5:LT</option>
+                            <option>HC/35:DE/25:CZ/20:PL/10:HU/10:AT</option>
+                            <option>HC/30:NAP-IT/25:TUS-IT/20:SAV-FR/15:SF-FR/10:RM</option>
+                            <option>HC/20:IE/15:GDH-SC/12:DE/10:FR/10:IT/8:ES/7:PL/6:GR/6:SE/6:HU</option>
+                            <option>HC/10:IE/8:EN/7:GDH-SC/6:DE/6:FR/6:IT/1:ES/5:PT/5:PL/5:BOH-CZ/5:HR/5:GR/5:RO/5:HU/4:TRN-FN/4:NO/4:FN/3:LT/3:LV/3:UA</option>
+                            <option>HC/10:FR/15:DE/25:PL/50:ALS-FR/#DI:J*-US/#J:ASH</option>
+                            <option>HC/15:GR/15:IT/25:CAS-ES/45:PT/#J:SEF</option>
+                            <option>HC/^M(100:IE)/^P(50:DE/50:FR)</option>
+                            <option>HC/^M(70:PL/30:UA)/^P(100:DE)</option>
+                            <option>HC/^M(100:IT)/^P(60:LEO-ES/40:FR)</option>
+                            <option>HC/^M(100:SE)/^P(70:FN/30:?)</option>
+                            <option>HC/^M(50:GR/50:AL)/^P(50:IT/25:HR/20:RO/5:@GY)</option>
+                            <option>HC/55:IE/25:DE/15:IT/3:FR/2:@AF/#DI:IE-US</option>
+                            <option>HC/64:DE/20:PL/10:PT/3:@NT/3:@AF/#DI:DE-BR</option>
+                            <option>HC/85:EN/10:IE/4:SE/1:@AU/#DI:EN-AU</option>
+                            <option>HC/90:AF/5:EN/5:@AF/#DI:AF-ZA</option>
+                        </select>
+                    </section>
+
+                    <section class="card">
+                        <h2>Syntax cheatsheet</h2>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Syntax</th>
+                                    <th>Meaning</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>100:DE</code></td>
+                                    <td>Identity</td>
+                                </tr>
+                                <tr>
+                                    <td><code>NOR-FR</code></td>
+                                    <td>Broader identity</td>
+                                </tr>
+                                <tr>
+                                    <td><code>^P(...)</code></td>
+                                    <td>Father</td>
+                                </tr>
+                                <tr>
+                                    <td><code>^M(...)</code></td>
+                                    <td>Mother</td>
+                                </tr>
+                                <tr>
+                                    <td><code>^PM(...)</code></td>
+                                    <td>Father's mother</td>
+                                </tr>
+                                <tr>
+                                    <td><code>^MP(...)</code></td>
+                                    <td>Mother's father</td>
+                                </tr>
+                                <tr>
+                                    <td><code>!25</code></td>
+                                    <td>Uncertain %%</td>
+                                </tr>
+                                <tr>
+                                    <td><code>?</code></td>
+                                    <td>Unknown identity</td>
+                                </tr>
+                                <tr>
+                                    <td><code>#J:</code></td>
+                                    <td>Jewish metadata</td>
+                                </tr>
+                                <tr>
+                                    <td><code>#DI:</code></td>
+                                    <td>Diaspora metadata</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <section class="card">
+                        <h2 class="mobile-last">Statistics</h2>
+                        <ul class="stats">
+                            <li>438 European identities</li>
+                            <li>10^100k+ possible codes</li>
+                            <li>197 diaspora labels</li>
+                            <li>14 classifications</li>
+                            <li>9 Jewish identities</li>
+                            <li>5 JSON files</li>
+                            <li>1 JavaScript file</li>
+                            <li>1 HTML file</li>
+                            <li>One contributor</li>
+                        </ul>
+                    </section>
+
+            </aside>
+        </main>
+
+        <div id="identity-results"></div>
+
+        <script src="haericode.js"></script>
+        <script src="webpage/webpage.js"></script>
+    </body>
+</html>

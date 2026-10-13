@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "identities": {
+    "SEF": {
+      "code": "SEF",
+      "name": "Sephardic"
+    },
+    "ASH": {
+      "code": "ASH",
+      "name": "Askenazi"
+    },
+    "ITK": {
+      "code": "ITK",
+      "name": "Italki"
+    },
+    "RMN": {
+      "code": "RMN",
+      "name": "Romaniote"
+    },
+    "GLZ": {
+      "code": "GLZ",
+      "name": "Galitzianer"
+    },
+    "LTV": {
+      "code": "LTV",
+      "name": "Litvak"
+    },
+    "EUJ": {
+      "code": "EUJ",
+      "name": "European Jew"
+    },
+    "XJ": {
+      "code": "XJ",
+      "name": "Non-European Jew"
+    },
+    "XXJ": {
+      "code": "XXJ",
+      "name": "Gypsy Jew"
+    }
+  }
+}

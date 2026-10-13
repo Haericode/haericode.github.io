@@ -1,0 +1,7457 @@
+{
+  "version": 1,
+  "identities": {
+    "EU": {
+      "code": "EU",
+      "name": "European",
+      "relationships": []
+    },
+    "C*": {
+      "code": "C*",
+      "name": "Celtic",
+      "relationships": []
+    },
+    "G*": {
+      "code": "G*",
+      "name": "Germanic",
+      "relationships": []
+    },
+    "S*": {
+      "code": "S*",
+      "name": "Slavic",
+      "relationships": []
+    },
+    "SC*": {
+      "code": "SC*",
+      "name": "Scandinavian",
+      "relationships": []
+    },
+    "N*": {
+      "code": "N*",
+      "name": "Nordic",
+      "relationships": []
+    },
+    "R*": {
+      "code": "R*",
+      "name": "Romance",
+      "relationships": []
+    },
+    "B*": {
+      "code": "B*",
+      "name": "Baltic",
+      "relationships": []
+    },
+    "U*": {
+      "code": "U*",
+      "name": "European Uralic",
+      "relationships": []
+    },
+    "H*": {
+      "code": "H*",
+      "name": "Hellenic",
+      "relationships": []
+    },
+    "KA*": {
+      "code": "KA*",
+      "name": "Kartvelian",
+      "relationships": []
+    },
+    "IB*": {
+      "code": "IB*",
+      "name": "Iberian",
+      "relationships": []
+    },
+    "I*": {
+      "code": "I*",
+      "name": "Italianate",
+      "relationships": []
+    },
+    "BI*": {
+      "code": "BI*",
+      "name": "British Insular",
+      "relationships": []
+    },
+    "J*": {
+      "code": "J*",
+      "name": "European Jewish",
+      "relationships": []
+    },
+    "IE": {
+      "code": "IE",
+      "name": "Irish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*",
+            "BI*"
+          ]
+        }
+      ]
+    },
+    "EN": {
+      "code": "EN",
+      "name": "English",
+      "aliases": [
+        "Anglo-Saxon"
+      ],
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SC": {
+      "code": "SC",
+      "name": "Scottish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        }
+      ]
+    },
+    "GSC": {
+      "code": "GSC",
+      "name": "Germanic Scottish",
+      "aliases": [
+        "Scots fowk"
+      ],
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*",
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SC"
+          ]
+        }
+      ]
+    },
+    "GDH": {
+      "code": "GDH",
+      "name": "Gaelic Scottish",
+      "aliases": [
+        "Gàidheal"
+      ],
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*",
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SC"
+          ]
+        }
+      ]
+    },
+    "LOW": {
+      "code": "LOW",
+      "name": "Scottish Lowlander",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GDH",
+            "GSC"
+          ]
+        }
+      ]
+    },
+    "USC": {
+      "code": "USC",
+      "name": "Ulster Scot",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*",
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GSC"
+          ]
+        }
+      ]
+    },
+    "GAL": {
+      "code": "GAL",
+      "name": "Gallovidian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GDH",
+            "GSC"
+          ]
+        }
+      ]
+    },
+    "HLD": {
+      "code": "HLD",
+      "name": "Scottish Highlander",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GDH",
+            "GSC"
+          ]
+        }
+      ]
+    },
+    "HEB": {
+      "code": "HEB",
+      "name": "Hebridean",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*",
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GDH"
+          ]
+        }
+      ]
+    },
+    "SHE": {
+      "code": "SHE",
+      "name": "Shetlander",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*",
+            "N*",
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SC"
+          ]
+        }
+      ]
+    },
+    "ORK": {
+      "code": "ORK",
+      "name": "Orcadian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*",
+            "N*",
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SC"
+          ]
+        }
+      ]
+    },
+    "CYM": {
+      "code": "CYM",
+      "name": "Welsh",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*",
+            "C*"
+          ]
+        }
+      ]
+    },
+    "GWY": {
+      "code": "GWY",
+      "name": "Gwyneddwr",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CYM"
+          ]
+        }
+      ]
+    },
+    "GLA": {
+      "code": "GLA",
+      "name": "Glarner",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "DYF": {
+      "code": "DYF",
+      "name": "Dyfediad",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CYM"
+          ]
+        }
+      ]
+    },
+    "POW": {
+      "code": "POW",
+      "name": "Powysian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CYM"
+          ]
+        }
+      ]
+    },
+    "GWE": {
+      "code": "GWE",
+      "name": "Gwentian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CYM"
+          ]
+        }
+      ]
+    },
+    "CER": {
+      "code": "CER",
+      "name": "Ceredigioniad",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CYM"
+          ]
+        }
+      ]
+    },
+    "TRM": {
+      "code": "TRM",
+      "name": "Tromsøværing",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO"
+          ]
+        }
+      ]
+    },
+    "NO": {
+      "code": "NO",
+      "name": "Norwegian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SE": {
+      "code": "SE",
+      "name": "Swedish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "DK": {
+      "code": "DK",
+      "name": "Danish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "FN": {
+      "code": "FN",
+      "name": "Finnish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "U*"
+          ]
+        }
+      ]
+    },
+    "DE": {
+      "code": "DE",
+      "name": "German",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "VE": {
+      "code": "VE",
+      "name": "Veps",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "VOD": {
+      "code": "VOD",
+      "name": "Votic",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "ING": {
+      "code": "ING",
+      "name": "Ingrian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        }
+      ]
+    },
+    "ERZ": {
+      "code": "ERZ",
+      "name": "Erzya",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "MRD"
+          ]
+        }
+      ]
+    },
+    "MOK": {
+      "code": "MOK",
+      "name": "Moksha",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "MRD"
+          ]
+        }
+      ]
+    },
+    "MRD": {
+      "code": "MRD",
+      "name": "Mordvin",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "JEY": {
+      "code": "JEY",
+      "name": "Jerseyite",
+      "relationships": []
+    },
+    "GUE": {
+      "code": "GUE",
+      "name": "Guernseyite",
+      "relationships": []
+    },
+    "SRK": {
+      "code": "SRK",
+      "name": "Sarkee",
+      "relationships": []
+    },
+    "YOR": {
+      "code": "YOR",
+      "name": "Yorkshireman",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "LAN": {
+      "code": "LAN",
+      "name": "Lancastrian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "NTH": {
+      "code": "NTH",
+      "name": "Northumbrian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "CUM": {
+      "code": "CUM",
+      "name": "Cumbrian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "EAN": {
+      "code": "EAN",
+      "name": "East Anglian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "WES": {
+      "code": "WES",
+      "name": "West Countryman",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "GEO": {
+      "code": "GEO",
+      "name": "Geordie",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "MID": {
+      "code": "MID",
+      "name": "Midlander",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "GE": {
+      "code": "GE",
+      "name": "Georgian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "KA*"
+          ]
+        }
+      ]
+    },
+    "MIN": {
+      "code": "MIN",
+      "name": "Mingrelian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "KA*"
+          ]
+        }
+      ]
+    },
+    "LAZ": {
+      "code": "LAZ",
+      "name": "Laz",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "KA*"
+          ]
+        }
+      ]
+    },
+    "SVA": {
+      "code": "SVA",
+      "name": "Svan",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "KA*"
+          ]
+        }
+      ]
+    },
+    "NL": {
+      "code": "NL",
+      "name": "Dutch",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "FL": {
+      "code": "FL",
+      "name": "Flemish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "BE",
+            "NL"
+          ]
+        }
+      ]
+    },
+    "IS": {
+      "code": "IS",
+      "name": "Icelandic",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "AND": {
+      "code": "AND",
+      "name": "Andalusian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        }
+      ]
+    },
+    "GIB": {
+      "code": "GIB",
+      "name": "Gibraltarian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "BRA": {
+      "code": "BRA",
+      "name": "Brabantian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NL",
+            "BE"
+          ]
+        }
+      ]
+    },
+    "LIM": {
+      "code": "LIM",
+      "name": "Limousin",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR",
+            "OC"
+          ]
+        }
+      ]
+    },
+    "ZEE": {
+      "code": "ZEE",
+      "name": "Zeelander",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NL"
+          ]
+        }
+      ]
+    },
+    "NOR": {
+      "code": "NOR",
+      "name": "Norman",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "PIC": {
+      "code": "PIC",
+      "name": "Picard",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "ALS": {
+      "code": "ALS",
+      "name": "Alsatian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR",
+            "DE",
+            "ALE"
+          ]
+        }
+      ]
+    },
+    "LOR": {
+      "code": "LOR",
+      "name": "Lorrainer",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "PRO": {
+      "code": "PRO",
+      "name": "Provençal",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR",
+            "OC"
+          ]
+        }
+      ]
+    },
+    "GAS": {
+      "code": "GAS",
+      "name": "Gascon",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*",
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR",
+            "ES"
+          ]
+        }
+      ]
+    },
+    "AN": {
+      "code": "AN",
+      "name": "Andorran",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CA",
+            "FR",
+            "ES"
+          ]
+        }
+      ]
+    },
+    "BUR": {
+      "code": "BUR",
+      "name": "Burgenlander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SAV": {
+      "code": "SAV",
+      "name": "Savoyard",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "AUV": {
+      "code": "AUV",
+      "name": "Auvergnat",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR",
+            "OC"
+          ]
+        }
+      ]
+    },
+    "BEA": {
+      "code": "BEA",
+      "name": "Béarnais",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR",
+            "OC"
+          ]
+        }
+      ]
+    },
+    "PER": {
+      "code": "PER",
+      "name": "Périgourdin",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR",
+            "OC"
+          ]
+        }
+      ]
+    },
+    "BAV": {
+      "code": "BAV",
+      "name": "Bavarian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        }
+      ]
+    },
+    "SWA": {
+      "code": "SWA",
+      "name": "Swabian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE",
+            "ALE"
+          ]
+        }
+      ]
+    },
+    "SAX": {
+      "code": "SAX",
+      "name": "Saxon",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        }
+      ]
+    },
+    "FRA": {
+      "code": "FRA",
+      "name": "Franconian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        }
+      ]
+    },
+    "ALE": {
+      "code": "ALE",
+      "name": "Alemannic",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        }
+      ]
+    },
+    "PUG": {
+      "code": "PUG",
+      "name": "Apulian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "CAL": {
+      "code": "CAL",
+      "name": "Calabrian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "LIG": {
+      "code": "LIG",
+      "name": "Ligurian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "TUS": {
+      "code": "TUS",
+      "name": "Tuscan",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "EMI": {
+      "code": "EMI",
+      "name": "Emilian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "RMG": {
+      "code": "RMG",
+      "name": "Romagnol",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "PIE": {
+      "code": "PIE",
+      "name": "Piedmontese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "LOM": {
+      "code": "LOM",
+      "name": "Lombard",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "PRU": {
+      "code": "PRU",
+      "name": "Prussian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "OPR": {
+      "code": "OPR",
+      "name": "Old Prussian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "BE": {
+      "code": "BE",
+      "name": "Belgian",
+      "relationships": []
+    },
+    "PL": {
+      "code": "PL",
+      "name": "Polish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "CZ": {
+      "code": "CZ",
+      "name": "Czech",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "SK": {
+      "code": "SK",
+      "name": "Slovak",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "UA": {
+      "code": "UA",
+      "name": "Ukrainian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "RU": {
+      "code": "RU",
+      "name": "Russian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "HR": {
+      "code": "HR",
+      "name": "Croatian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "SR": {
+      "code": "SR",
+      "name": "Serbian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "SI": {
+      "code": "SI",
+      "name": "Slovenian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "BG": {
+      "code": "BG",
+      "name": "Bulgarian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "MK": {
+      "code": "MK",
+      "name": "Macedonian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "ES": {
+      "code": "ES",
+      "name": "Spanish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*",
+            "R*"
+          ]
+        }
+      ]
+    },
+    "CA": {
+      "code": "CA",
+      "name": "Catalan",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*",
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES",
+            "FR"
+          ]
+        }
+      ]
+    },
+    "PT": {
+      "code": "PT",
+      "name": "Portuguese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*",
+            "R*"
+          ]
+        }
+      ]
+    },
+    "IT": {
+      "code": "IT",
+      "name": "Italian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*",
+            "R*"
+          ]
+        }
+      ]
+    },
+    "RO": {
+      "code": "RO",
+      "name": "Romanian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "FR": {
+      "code": "FR",
+      "name": "French",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "OC": {
+      "code": "OC",
+      "name": "Occitan",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "SIC": {
+      "code": "SIC",
+      "name": "Sicilian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "I*",
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "EUS": {
+      "code": "EUS",
+      "name": "Basque",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES",
+            "FR"
+          ]
+        }
+      ]
+    },
+    "GR": {
+      "code": "GR",
+      "name": "Greek",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "CY": {
+      "code": "CY",
+      "name": "Cypriot",
+      "aliases": [
+        "Greek Cypriot"
+      ],
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        }
+      ]
+    },
+    "PON": {
+      "code": "PON",
+      "name": "Pontic Greek",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        }
+      ]
+    },
+    "AL": {
+      "code": "AL",
+      "name": "Albanian",
+      "relationships": []
+    },
+    "HU": {
+      "code": "HU",
+      "name": "Hungarian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "PMR": {
+      "code": "PMR",
+      "name": "Pomor",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RU"
+          ]
+        }
+      ]
+    },
+    "FFN": {
+      "code": "FFN",
+      "name": "Forest Finn",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        }
+      ]
+    },
+    "TRN": {
+      "code": "TRN",
+      "name": "Tornedalian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE",
+            "FN"
+          ]
+        }
+      ]
+    },
+    "KVN": {
+      "code": "KVN",
+      "name": "Kven",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO",
+            "FN"
+          ]
+        }
+      ]
+    },
+    "AUHU": {
+      "code": "AUHU",
+      "name": "Austro-Hungarian",
+      "relationships": []
+    },
+    "YUG": {
+      "code": "YUG",
+      "name": "Yugoslav",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "CZSK": {
+      "code": "CZSK",
+      "name": "Czechoslovak",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "HUG": {
+      "code": "HUG",
+      "name": "Huguenot",
+      "relationships": []
+    },
+    "ASH": {
+      "code": "ASH",
+      "name": "Ashkenazi Jewish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "J*",
+            "G*",
+            "S*"
+          ]
+        }
+      ]
+    },
+    "SEF": {
+      "code": "SEF",
+      "name": "Sephardic Jewish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "J*",
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "ITK": {
+      "code": "ITK",
+      "name": "Italki Jewish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "J*",
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "RMN": {
+      "code": "RMN",
+      "name": "Romaniote Jewish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "J*",
+            "H*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        }
+      ]
+    },
+    "GOR": {
+      "code": "GOR",
+      "name": "Goral",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL",
+            "SK"
+          ]
+        }
+      ]
+    },
+    "COS": {
+      "code": "COS",
+      "name": "Cossack",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RU",
+            "UA"
+          ]
+        }
+      ]
+    },
+    "VOR": {
+      "code": "VOR",
+      "name": "Vorarlbergian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SET": {
+      "code": "SET",
+      "name": "Seto",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ET"
+          ]
+        }
+      ]
+    },
+    "LI": {
+      "code": "LI",
+      "name": "Livonian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "AT": {
+      "code": "AT",
+      "name": "Austrian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "CUR": {
+      "code": "CUR",
+      "name": "Curonian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "SEM": {
+      "code": "SEM",
+      "name": "Semigallian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "SEL": {
+      "code": "SEL",
+      "name": "Selonian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "CH": {
+      "code": "CH",
+      "name": "Swiss",
+      "relationships": []
+    },
+    "SG": {
+      "code": "SG",
+      "name": "Swiss German",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CH",
+            "DE",
+            "ALE"
+          ]
+        }
+      ]
+    },
+    "SF": {
+      "code": "SF",
+      "name": "Swiss French",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CH",
+            "FR"
+          ]
+        }
+      ]
+    },
+    "JAT": {
+      "code": "JAT",
+      "name": "Jatvingian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "SIT": {
+      "code": "SIT",
+      "name": "Swiss Italian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CH",
+            "IT"
+          ]
+        }
+      ]
+    },
+    "FRI": {
+      "code": "FRI",
+      "name": "Frisian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NL",
+            "DE"
+          ]
+        }
+      ]
+    },
+    "FO": {
+      "code": "FO",
+      "name": "Faroese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "ARB": {
+      "code": "ARB",
+      "name": "Arbëreshë",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AL"
+          ]
+        }
+      ]
+    },
+    "ARV": {
+      "code": "ARV",
+      "name": "Arvanite",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AL"
+          ]
+        }
+      ]
+    },
+    "ANG": {
+      "code": "ANG",
+      "name": "Anatolian Greek",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "HLW": {
+      "code": "HLW",
+      "name": "Highland Welsh",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CYM"
+          ]
+        }
+      ]
+    },
+    "SCI": {
+      "code": "SCI",
+      "name": "Scillonian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "KER"
+          ]
+        }
+      ]
+    },
+    "XK": {
+      "code": "XK",
+      "name": "Kosovar",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AL",
+            "SR"
+          ]
+        }
+      ]
+    },
+    "TOR": {
+      "code": "TOR",
+      "name": "Torbeshi",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "BUN": {
+      "code": "BUN",
+      "name": "Bunjevci",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HR"
+          ]
+        }
+      ]
+    },
+    "SOK": {
+      "code": "SOK",
+      "name": "Šokci",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HR"
+          ]
+        }
+      ]
+    },
+    "VLA": {
+      "code": "VLA",
+      "name": "Vlach",
+      "aliases": [
+        "Wallachian"
+      ],
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "MD": {
+      "code": "MD",
+      "name": "Moldovan",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "SIL": {
+      "code": "SIL",
+      "name": "Silesian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL",
+            "CZ"
+          ]
+        }
+      ]
+    },
+    "POM": {
+      "code": "POM",
+      "name": "Pomeranian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE",
+            "PL",
+            "KAS"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "LMB": {
+      "code": "LMB",
+      "name": "Limburger",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NL",
+            "BE"
+          ]
+        }
+      ]
+    },
+    "BOH": {
+      "code": "BOH",
+      "name": "Bohemian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CZ"
+          ]
+        }
+      ]
+    },
+    "DAL": {
+      "code": "DAL",
+      "name": "Dalmatian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HR"
+          ]
+        }
+      ]
+    },
+    "SLV": {
+      "code": "SLV",
+      "name": "Slovincian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "KAS"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "IST": {
+      "code": "IST",
+      "name": "Istrian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HR",
+            "IT"
+          ]
+        }
+      ]
+    },
+    "MUN": {
+      "code": "MUN",
+      "name": "Muntenian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "VLA"
+          ]
+        }
+      ]
+    },
+    "LEI": {
+      "code": "LEI",
+      "name": "Leinsterian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IE"
+          ]
+        }
+      ]
+    },
+    "CON": {
+      "code": "CON",
+      "name": "Connachtian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IE"
+          ]
+        }
+      ]
+    },
+    "CHA": {
+      "code": "CHA",
+      "name": "Champenois",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "POI": {
+      "code": "POI",
+      "name": "Poitevin",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "ANJ": {
+      "code": "ANJ",
+      "name": "Angevin",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "DAU": {
+      "code": "DAU",
+      "name": "Dauphinois",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "VND": {
+      "code": "VND",
+      "name": "Vendean",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "KAS": {
+      "code": "KAS",
+      "name": "Kashubian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL"
+          ]
+        }
+      ]
+    },
+    "MOR": {
+      "code": "MOR",
+      "name": "Moravian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CZ"
+          ]
+        }
+      ]
+    },
+    "BY": {
+      "code": "BY",
+      "name": "Belarusian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "BRZ": {
+      "code": "BRZ",
+      "name": "Breton",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "KER": {
+      "code": "KER",
+      "name": "Cornish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*",
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "MN": {
+      "code": "MN",
+      "name": "Manx",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*",
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EN"
+          ]
+        }
+      ]
+    },
+    "GA": {
+      "code": "GA",
+      "name": "Galician",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        }
+      ]
+    },
+    "LAD": {
+      "code": "LAD",
+      "name": "Ladin",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "LEO": {
+      "code": "LEO",
+      "name": "Leonese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        }
+      ]
+    },
+    "ARA": {
+      "code": "ARA",
+      "name": "Aranese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*",
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GAS"
+          ]
+        }
+      ]
+    },
+    "ARG": {
+      "code": "ARG",
+      "name": "Aragonese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*",
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        }
+      ]
+    },
+    "GIP": {
+      "code": "GIP",
+      "name": "Gipuzkoan",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EUS",
+            "ES"
+          ]
+        }
+      ]
+    },
+    "SOU": {
+      "code": "SOU",
+      "name": "Souletin",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EUS"
+          ]
+        }
+      ]
+    },
+    "NAV": {
+      "code": "NAV",
+      "name": "Navarrese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*",
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EUS",
+            "ES"
+          ]
+        }
+      ]
+    },
+    "CAN": {
+      "code": "CAN",
+      "name": "Canarian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*",
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        }
+      ]
+    },
+    "EXT": {
+      "code": "EXT",
+      "name": "Extremaduran",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        }
+      ]
+    },
+    "MUR": {
+      "code": "MUR",
+      "name": "Murcian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        }
+      ]
+    },
+    "BAL": {
+      "code": "BAL",
+      "name": "Balearic",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*",
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CA",
+            "ES"
+          ]
+        }
+      ]
+    },
+    "CAS": {
+      "code": "CAS",
+      "name": "Castilian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        }
+      ]
+    },
+    "AZO": {
+      "code": "AZO",
+      "name": "Azorean",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PT"
+          ]
+        }
+      ]
+    },
+    "MAD": {
+      "code": "MAD",
+      "name": "Madeiran",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PT"
+          ]
+        }
+      ]
+    },
+    "ARP": {
+      "code": "ARP",
+      "name": "Arpitan",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR",
+            "SF",
+            "IT"
+          ]
+        }
+      ]
+    },
+    "SMR": {
+      "code": "SMR",
+      "name": "Sammarinese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "LUX": {
+      "code": "LUX",
+      "name": "Luxembourger",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "LIE": {
+      "code": "LIE",
+      "name": "Liechtensteiner",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ALE"
+          ]
+        }
+      ]
+    },
+    "CIM": {
+      "code": "CIM",
+      "name": "Cimbrian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE",
+            "BAV"
+          ]
+        }
+      ]
+    },
+    "MOC": {
+      "code": "MOC",
+      "name": "Mòcheno",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE",
+            "BAV"
+          ]
+        }
+      ]
+    },
+    "WAL": {
+      "code": "WAL",
+      "name": "Walser",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG",
+            "DE",
+            "ALE"
+          ]
+        }
+      ]
+    },
+    "LEM": {
+      "code": "LEM",
+      "name": "Lemko",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RSY"
+          ]
+        }
+      ]
+    },
+    "GAG": {
+      "code": "GAG",
+      "name": "Gagauz",
+      "relationships": []
+    },
+    "IZH": {
+      "code": "IZH",
+      "name": "Izhorean",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "KPR": {
+      "code": "KPR",
+      "name": "Komi-Permyak",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "KOM"
+          ]
+        }
+      ]
+    },
+    "KZY": {
+      "code": "KZY",
+      "name": "Komi-Zyrian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "KOM"
+          ]
+        }
+      ]
+    },
+    "CO": {
+      "code": "CO",
+      "name": "Corsican",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR",
+            "IT"
+          ]
+        }
+      ]
+    },
+    "SAR": {
+      "code": "SAR",
+      "name": "Sardinian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "FRL": {
+      "code": "FRL",
+      "name": "Friulian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "RM": {
+      "code": "RM",
+      "name": "Romansh",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CH"
+          ]
+        }
+      ]
+    },
+    "WA": {
+      "code": "WA",
+      "name": "Walloon",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "BE"
+          ]
+        }
+      ]
+    },
+    "AST": {
+      "code": "AST",
+      "name": "Asturian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        }
+      ]
+    },
+    "MIR": {
+      "code": "MIR",
+      "name": "Mirandese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PT"
+          ]
+        }
+      ]
+    },
+    "LV": {
+      "code": "LV",
+      "name": "Latvian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "LT": {
+      "code": "LT",
+      "name": "Lithuanian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "LGL": {
+      "code": "LGL",
+      "name": "Latgalian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "LV"
+          ]
+        }
+      ]
+    },
+    "ET": {
+      "code": "ET",
+      "name": "Estonian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "KAR": {
+      "code": "KAR",
+      "name": "Karelian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "LUD": {
+      "code": "LUD",
+      "name": "Ludic",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "KAR"
+          ]
+        }
+      ]
+    },
+    "SAM": {
+      "code": "SAM",
+      "name": "Sámi",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "SSM": {
+      "code": "SSM",
+      "name": "Southern Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "USM": {
+      "code": "USM",
+      "name": "Ume Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "PSM": {
+      "code": "PSM",
+      "name": "Pite Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "LSM": {
+      "code": "LSM",
+      "name": "Lule Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "NSM": {
+      "code": "NSM",
+      "name": "Northern Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "ISM": {
+      "code": "ISM",
+      "name": "Inari Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "SKM": {
+      "code": "SKM",
+      "name": "Skolt Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "ASM": {
+      "code": "ASM",
+      "name": "Akkala Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "KSM": {
+      "code": "KSM",
+      "name": "Kildin Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "TSM": {
+      "code": "TSM",
+      "name": "Ter Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "KEM": {
+      "code": "KEM",
+      "name": "Kemi Sámi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SAM"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "KOM": {
+      "code": "KOM",
+      "name": "Komi",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "UDM": {
+      "code": "UDM",
+      "name": "Udmurt",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "MAR": {
+      "code": "MAR",
+      "name": "Mari",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "BS": {
+      "code": "BS",
+      "name": "Bosniak",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "CG": {
+      "code": "CG",
+      "name": "Montenegrin",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "SOR": {
+      "code": "SOR",
+      "name": "Sørlending",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "RSY": {
+      "code": "RSY",
+      "name": "Rusyn",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "UA",
+            "SK",
+            "PL",
+            "SR"
+          ]
+        }
+      ]
+    },
+    "ARM": {
+      "code": "ARM",
+      "name": "Aromanian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "QB": {
+      "code": "QB",
+      "name": "Québécois",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        }
+      ]
+    },
+    "AF": {
+      "code": "AF",
+      "name": "Afrikaner",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NL"
+          ]
+        }
+      ]
+    },
+    "MLT": {
+      "code": "MLT",
+      "name": "Maltese",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        }
+      ]
+    },
+    "ULI": {
+      "code": "ULI",
+      "name": "Ulster Irish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "BI*",
+            "C*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IE"
+          ]
+        }
+      ]
+    },
+    "BIZ": {
+      "code": "BIZ",
+      "name": "Biscayan",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EUS"
+          ]
+        }
+      ]
+    },
+    "VAL": {
+      "code": "VAL",
+      "name": "Valencian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "CA",
+            "ES"
+          ]
+        }
+      ]
+    },
+    "NAP": {
+      "code": "NAP",
+      "name": "Neapolitan",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "VEN": {
+      "code": "VEN",
+      "name": "Venetian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IT"
+          ]
+        }
+      ]
+    },
+    "AGO": {
+      "code": "AGO",
+      "name": "Agote",
+      "aliases": [
+        "Cagot"
+      ],
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "IB*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "EUS",
+            "ES",
+            "FR",
+            "GAS"
+          ]
+        }
+      ]
+    },
+    "IRT": {
+      "code": "IRT",
+      "name": "Irish Traveller",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "C*",
+            "BI*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IE"
+          ]
+        }
+      ]
+    },
+    "WWB": {
+      "code": "WWB",
+      "name": "Woonwagenbewoner",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NL",
+            "FL"
+          ]
+        }
+      ]
+    },
+    "YEN": {
+      "code": "YEN",
+      "name": "Yenish",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        },
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE",
+            "CH",
+            "AT"
+          ]
+        }
+      ]
+    },
+    "POL": {
+      "code": "POL",
+      "name": "Polabian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "KAS"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "PLN": {
+      "code": "PLN",
+      "name": "Polesian",
+      "aliases": [
+        "Poleshuk"
+      ],
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "UA",
+            "BY"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "HUT": {
+      "code": "HUT",
+      "name": "Hutsul",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "UA"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "BOY": {
+      "code": "BOY",
+      "name": "Boyko",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "UA"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "OLN": {
+      "code": "OLN",
+      "name": "Olonetsian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "KAR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "TRA": {
+      "code": "TRA",
+      "name": "Transylvanian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RO"
+          ]
+        }
+      ]
+    },
+    "DOB": {
+      "code": "DOB",
+      "name": "Dobrujan",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RO",
+            "BG"
+          ]
+        }
+      ]
+    },
+    "BAN": {
+      "code": "BAN",
+      "name": "Banatian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RO",
+            "SR",
+            "HU"
+          ]
+        }
+      ]
+    },
+    "BUK": {
+      "code": "BUK",
+      "name": "Bukovinian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RO",
+            "UA"
+          ]
+        }
+      ]
+    },
+    "MRM": {
+      "code": "MRM",
+      "name": "Maramuresean",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RO",
+            "UA"
+          ]
+        }
+      ]
+    },
+    "CRI": {
+      "code": "CRI",
+      "name": "Crisanean",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RO",
+            "HU"
+          ]
+        }
+      ]
+    },
+    "OLT": {
+      "code": "OLT",
+      "name": "Oltenian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "VLA"
+          ]
+        }
+      ]
+    },
+    "GLD": {
+      "code": "GLD",
+      "name": "Galindian",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "CAR": {
+      "code": "CAR",
+      "name": "Carinthian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "STY": {
+      "code": "STY",
+      "name": "Styrian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SAG": {
+      "code": "SAG",
+      "name": "Samogitian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "LT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "LAB": {
+      "code": "LAB",
+      "name": "Lab",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AL"
+          ]
+        }
+      ]
+    },
+    "GHE": {
+      "code": "GHE",
+      "name": "Gheg",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AL"
+          ]
+        }
+      ]
+    },
+    "TOS": {
+      "code": "TOS",
+      "name": "Tosk",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AL"
+          ]
+        }
+      ]
+    },
+    "CRE": {
+      "code": "CRE",
+      "name": "Cretan",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "TSA": {
+      "code": "TSA",
+      "name": "Tsakonian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "CAP": {
+      "code": "CAP",
+      "name": "Cappadocian Greek",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "LTV": {
+      "code": "LTV",
+      "name": "Litvak",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ASH"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "J*"
+          ]
+        }
+      ]
+    },
+    "GLZ": {
+      "code": "GLZ",
+      "name": "Galitzianer",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ASH"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "J*"
+          ]
+        }
+      ]
+    },
+    "AI": {
+      "code": "AI",
+      "name": "Anglo-Irish",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IE",
+            "EN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "BI*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "DEB": {
+      "code": "DEB",
+      "name": "Baltic German",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE",
+            "ET",
+            "LV"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "ALA": {
+      "code": "ALA",
+      "name": "Ålander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "TRD": {
+      "code": "TRD",
+      "name": "Trønder",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "NLD": {
+      "code": "NLD",
+      "name": "Nordlending",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "VST": {
+      "code": "VST",
+      "name": "Vestlending",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "OST": {
+      "code": "OST",
+      "name": "Østlending",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "BGS": {
+      "code": "BGS",
+      "name": "Bergenser",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "RGL": {
+      "code": "RGL",
+      "name": "Rogalending",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SUN": {
+      "code": "SUN",
+      "name": "Sunnmøring",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "NO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SCA": {
+      "code": "SCA",
+      "name": "Scanian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "GOT": {
+      "code": "GOT",
+      "name": "Gotlander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "DLC": {
+      "code": "DLC",
+      "name": "Dalecarlian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "OVD": {
+      "code": "OVD",
+      "name": "Övdaling",
+      "aliases": [
+        "Elfdalian"
+      ],
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DLC"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "VAM": {
+      "code": "VAM",
+      "name": "Våmhuser",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DLC"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "MRK": {
+      "code": "MRK",
+      "name": "Morakar",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DLC"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SLL": {
+      "code": "SLL",
+      "name": "Solleröbo",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DLC"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "ORS": {
+      "code": "ORS",
+      "name": "Orsabo",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DLC"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "ORE": {
+      "code": "ORE",
+      "name": "Orebo",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DLC"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "VNJ": {
+      "code": "VNJ",
+      "name": "Venjanbo",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DLC"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "JAM": {
+      "code": "JAM",
+      "name": "Jämtlander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SML": {
+      "code": "SML",
+      "name": "Smålander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "NRL": {
+      "code": "NRL",
+      "name": "Norrlander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "JUT": {
+      "code": "JUT",
+      "name": "Jutlander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DK"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "FYN": {
+      "code": "FYN",
+      "name": "Fynbo",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DK"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "BOR": {
+      "code": "BOR",
+      "name": "Bornholmer",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DK"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "ZEL": {
+      "code": "ZEL",
+      "name": "Zealander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DK"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "ZRH": {
+      "code": "ZRH",
+      "name": "Züricher",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "BER": {
+      "code": "BER",
+      "name": "Bernese",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG",
+            "SF"
+          ]
+        }
+      ]
+    },
+    "LUC": {
+      "code": "LUC",
+      "name": "Lucernean",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "URI": {
+      "code": "URI",
+      "name": "Urner",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "SZY": {
+      "code": "SZY",
+      "name": "Schwyzer",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "OWI": {
+      "code": "OWI",
+      "name": "Obwaldner",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "NWI": {
+      "code": "NWI",
+      "name": "Nidwaldner",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "ZUG": {
+      "code": "ZUG",
+      "name": "Zuger",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "FRB": {
+      "code": "FRB",
+      "name": "Fribourgeois",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG",
+            "SF"
+          ]
+        }
+      ]
+    },
+    "SOL": {
+      "code": "SOL",
+      "name": "Solothurner",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "BAS": {
+      "code": "BAS",
+      "name": "Basler",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "BLA": {
+      "code": "BLA",
+      "name": "Baselbieter",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "SHF": {
+      "code": "SHF",
+      "name": "Schaffhauser",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "APP": {
+      "code": "APP",
+      "name": "Appenzeller",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "STG": {
+      "code": "STG",
+      "name": "St. Galler",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "GRI": {
+      "code": "GRI",
+      "name": "Graubündner",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG",
+            "SIT",
+            "RM"
+          ]
+        }
+      ]
+    },
+    "AAR": {
+      "code": "AAR",
+      "name": "Aargauer",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "THU": {
+      "code": "THU",
+      "name": "Thurgauer",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG"
+          ]
+        }
+      ]
+    },
+    "TIC": {
+      "code": "TIC",
+      "name": "Ticinese",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SIT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "VDT": {
+      "code": "VDT",
+      "name": "Vaudois",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SF"
+          ]
+        }
+      ]
+    },
+    "VLS": {
+      "code": "VLS",
+      "name": "Valaisan",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SG",
+            "SF"
+          ]
+        }
+      ]
+    },
+    "NEU": {
+      "code": "NEU",
+      "name": "Neuchâtelois",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SF"
+          ]
+        }
+      ]
+    },
+    "GEN": {
+      "code": "GEN",
+      "name": "Genevan",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SF"
+          ]
+        }
+      ]
+    },
+    "JUR": {
+      "code": "JUR",
+      "name": "Jurassian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SF"
+          ]
+        }
+      ]
+    },
+    "MAT": {
+      "code": "MAT",
+      "name": "Matyó",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HU"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "PAL": {
+      "code": "PAL",
+      "name": "Palóc",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HU"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "TVK": {
+      "code": "TVK",
+      "name": "Tver Karelian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "KAR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "SZE": {
+      "code": "SZE",
+      "name": "Székely",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HU"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "BKG": {
+      "code": "BKG",
+      "name": "Bukovina German",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SVO": {
+      "code": "SVO",
+      "name": "Savonian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "TAV": {
+      "code": "TAV",
+      "name": "Tavastian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "OTB": {
+      "code": "OTB",
+      "name": "Ostrobothnian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "SOB": {
+      "code": "SOB",
+      "name": "South Ostrobothnian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "KAI": {
+      "code": "KAI",
+      "name": "Kainuulainen",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*",
+            "N*"
+          ]
+        }
+      ]
+    },
+    "NYL": {
+      "code": "NYL",
+      "name": "Nylänning",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "ABO": {
+      "code": "ABO",
+      "name": "Åbolänning",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "OSB": {
+      "code": "OSB",
+      "name": "Österbottning",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FN"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "BHL": {
+      "code": "BHL",
+      "name": "Bohuslänning",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "HAL": {
+      "code": "HAL",
+      "name": "Hallänning",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "VRM": {
+      "code": "VRM",
+      "name": "Värmlänning",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "VGT": {
+      "code": "VGT",
+      "name": "Västgöte",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "OGT": {
+      "code": "OGT",
+      "name": "Östgöte",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "UPL": {
+      "code": "UPL",
+      "name": "Upplänning",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SRM": {
+      "code": "SRM",
+      "name": "Sörmlänning",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "HJE": {
+      "code": "HJE",
+      "name": "Härjedaling",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "HLS": {
+      "code": "HLS",
+      "name": "Hälsing",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "N*",
+            "SC*",
+            "G*"
+          ]
+        }
+      ]
+    },
+    "MAN": {
+      "code": "MAN",
+      "name": "Maniot",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "SAK": {
+      "code": "SAK",
+      "name": "Sarakatsan",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "MGR": {
+      "code": "MGR",
+      "name": "Macedonian Greek",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "THG": {
+      "code": "THG",
+      "name": "Thracian Greek",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "HEP": {
+      "code": "HEP",
+      "name": "Heptanesian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "CYL": {
+      "code": "CYL",
+      "name": "Cycladian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "DOD": {
+      "code": "DOD",
+      "name": "Dodecanesian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "EPI": {
+      "code": "EPI",
+      "name": "Epirote",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "CRF": {
+      "code": "CRF",
+      "name": "Corfiot",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HEP"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "CEP": {
+      "code": "CEP",
+      "name": "Cephalonian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HEP"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "ZAK": {
+      "code": "ZAK",
+      "name": "Zakynthian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HEP"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "ITH": {
+      "code": "ITH",
+      "name": "Ithacan",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "HEP"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "RHO": {
+      "code": "RHO",
+      "name": "Rhodian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DOD"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "KOS": {
+      "code": "KOS",
+      "name": "Kosian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DOD"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "CHI": {
+      "code": "CHI",
+      "name": "Chiot",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "SMN": {
+      "code": "SMN",
+      "name": "Samian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "LES": {
+      "code": "LES",
+      "name": "Lesvian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "LMN": {
+      "code": "LMN",
+      "name": "Lemnian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "EUB": {
+      "code": "EUB",
+      "name": "Euboean",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "GR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "H*"
+          ]
+        }
+      ]
+    },
+    "MHO": {
+      "code": "MHO",
+      "name": "Minhoto",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "TRS": {
+      "code": "TRS",
+      "name": "Transmontano",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "BEI": {
+      "code": "BEI",
+      "name": "Beirão",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "RIB": {
+      "code": "RIB",
+      "name": "Ribatejano",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "ALJ": {
+      "code": "ALJ",
+      "name": "Alentejano",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "ALG": {
+      "code": "ALG",
+      "name": "Algarvio",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "MUS": {
+      "code": "MUS",
+      "name": "Munsterian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "C*",
+            "BI*"
+          ]
+        }
+      ]
+    },
+    "ARI": {
+      "code": "ARI",
+      "name": "Aran Islander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "C*",
+            "BI*"
+          ]
+        }
+      ]
+    },
+    "CNR": {
+      "code": "CNR",
+      "name": "Connemarian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "C*",
+            "BI*"
+          ]
+        }
+      ]
+    },
+    "DGN": {
+      "code": "DGN",
+      "name": "Donegalman",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "IE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "C*",
+            "BI*"
+          ]
+        }
+      ]
+    },
+    "TYR": {
+      "code": "TYR",
+      "name": "Tyrolean",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SAL": {
+      "code": "SAL",
+      "name": "Salzburgian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "UPA": {
+      "code": "UPA",
+      "name": "Upper Austrian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "LOA": {
+      "code": "LOA",
+      "name": "Lower Austrian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "VIE": {
+      "code": "VIE",
+      "name": "Viennese",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "RHE": {
+      "code": "RHE",
+      "name": "Rhinelander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "PFA": {
+      "code": "PFA",
+      "name": "Palatine",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "HES": {
+      "code": "HES",
+      "name": "Hessian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "WPH": {
+      "code": "WPH",
+      "name": "Westphalian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "THI": {
+      "code": "THI",
+      "name": "Thuringian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SAA": {
+      "code": "SAA",
+      "name": "Saarlander",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "MEC": {
+      "code": "MEC",
+      "name": "Mecklenburger",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "HOL": {
+      "code": "HOL",
+      "name": "Holsteiner",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "SRB": {
+      "code": "SRB",
+      "name": "Sorb",
+      "aliases": [
+        "Wend"
+      ],
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "SAT": {
+      "code": "SAT",
+      "name": "Sater Frisian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FRI",
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "POD": {
+      "code": "POD",
+      "name": "Podhalanian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL",
+            "GOR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "KUR": {
+      "code": "KUR",
+      "name": "Kurpian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "KOC": {
+      "code": "KOC",
+      "name": "Kociewian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "LWC": {
+      "code": "LWC",
+      "name": "Łowiczian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "KRA": {
+      "code": "KRA",
+      "name": "Krakowian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "LAS": {
+      "code": "LAS",
+      "name": "Lasovian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "RZE": {
+      "code": "RZE",
+      "name": "Rzeszowian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "ORV": {
+      "code": "ORV",
+      "name": "Oravian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL",
+            "SK"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "SPC": {
+      "code": "SPC",
+      "name": "Spišian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "PL",
+            "SK"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "HAN": {
+      "code": "HAN",
+      "name": "Hanakian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "MOR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "LCH": {
+      "code": "LCH",
+      "name": "Lachian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "MOR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "CHO": {
+      "code": "CHO",
+      "name": "Chod",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "BOH"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "SHR": {
+      "code": "SHR",
+      "name": "Šarišan",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SK"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "ZEM": {
+      "code": "ZEM",
+      "name": "Zemplínian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SK"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "GEM": {
+      "code": "GEM",
+      "name": "Gemerian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SK"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "MDA": {
+      "code": "MDA",
+      "name": "Moldavian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "CNT": {
+      "code": "CNT",
+      "name": "Cantabrian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ES"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "VZM": {
+      "code": "VZM",
+      "name": "Vidzemian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "LV"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "KZM": {
+      "code": "KZM",
+      "name": "Kurzemean",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "LV"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "ZGM": {
+      "code": "ZGM",
+      "name": "Zemgalian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "LV"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "AUK": {
+      "code": "AUK",
+      "name": "Aukštaitian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "LT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "DZK": {
+      "code": "DZK",
+      "name": "Dzūkian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "LT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "SUV": {
+      "code": "SUV",
+      "name": "Suvalkian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "LT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "LTM": {
+      "code": "LTM",
+      "name": "Lietuvinink",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "LT"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "B*"
+          ]
+        }
+      ]
+    },
+    "MUL": {
+      "code": "MUL",
+      "name": "Mulgi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ET"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "SAI": {
+      "code": "SAI",
+      "name": "Saaremaalane",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ET"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "HID": {
+      "code": "HID",
+      "name": "Hiidlane",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ET"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "U*"
+          ]
+        }
+      ]
+    },
+    "BRS": {
+      "code": "BRS",
+      "name": "Bressan",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "ARP"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "BRC": {
+      "code": "BRC",
+      "name": "Berrichon",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "CAM": {
+      "code": "CAM",
+      "name": "Camminante",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SIC"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "I*"
+          ]
+        }
+      ]
+    },
+    "FCO": {
+      "code": "FCO",
+      "name": "Franco-Comtois",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "IRO": {
+      "code": "IRO",
+      "name": "Istro-Romanian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "RO"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "NIV": {
+      "code": "NIV",
+      "name": "Nivernais",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "ORL": {
+      "code": "ORL",
+      "name": "Orléanais",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "PCH": {
+      "code": "PCH",
+      "name": "Percheron",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "RMD": {
+      "code": "RMD",
+      "name": "Romand",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "SF"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "SGS": {
+      "code": "SGS",
+      "name": "Saintongeais",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "SOG": {
+      "code": "SOG",
+      "name": "Solognot",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "TOU": {
+      "code": "TOU",
+      "name": "Tourangeau",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "FR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "TVL": {
+      "code": "TVL",
+      "name": "Timok Vlach",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "VLA"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*"
+          ]
+        }
+      ]
+    },
+    "VQA": {
+      "code": "VQA",
+      "name": "Vaqueiro de Alzada",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "AST",
+            "ES"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "R*",
+            "IB*"
+          ]
+        }
+      ]
+    },
+    "VIL": {
+      "code": "VIL",
+      "name": "Vilamovian",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "DE"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "G*"
+          ]
+        }
+      ]
+    },
+    "GRN": {
+      "code": "GRN",
+      "name": "Gorani",
+      "relationships": [
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "SHP": {
+      "code": "SHP",
+      "name": "Shopi",
+      "relationships": [
+        {
+          "type": "broaderIdentities",
+          "code": [
+            "BG",
+            "MK",
+            "SR"
+          ]
+        },
+        {
+          "type": "classifications",
+          "code": [
+            "S*"
+          ]
+        }
+      ]
+    },
+    "@AM": {
+      "code": "@AM",
+      "name": "Armenian",
+      "aliases": [],
+      "relationships": []
+    },
+    "@NKIC": {
+      "code": "@NKIC",
+      "name": "Non-Kartvelian Indigenous Caucasian",
+      "aliases": [
+        "Abkhaz",
+        "Abaza",
+        "Circassian",
+        "Dagestani",
+        "Avar",
+        "Dargin",
+        "Chechen",
+        "Ingush",
+        "Lezgin",
+        "Lak",
+        "Tabasaran",
+        "Rutul",
+        "Tsakhur",
+        "Agul",
+        "Udi",
+        "Andic",
+        "Tsezic",
+        "Archin",
+        "Budukh",
+        "Kryts"
+      ],
+      "relationships": []
+    },
+    "@EA": {
+      "code": "@EA",
+      "name": "East Asian",
+      "aliases": [
+        "Oriental",
+        "Chinese",
+        "Sinitic",
+        "Japanese",
+        "Korean",
+        "Mongolian",
+        "Taiwanese"
+      ],
+      "relationships": []
+    },
+    "@TI": {
+      "code": "@TI",
+      "name": "Tibetan",
+      "aliases": [],
+      "relationships": []
+    },
+    "@MO": {
+      "code": "@MO",
+      "name": "Mongolic",
+      "aliases": [
+        "Mongol",
+        "Buryat",
+        "Kalmyk",
+        "Oirat",
+        "Daur",
+        "Dongxiang",
+        "Bonan",
+        "Monguor",
+        "Moghol"
+      ],
+      "relationships": []
+    },
+    "@SE": {
+      "code": "@SE",
+      "name": "Southeast Asian",
+      "aliases": [
+        "Myanmar",
+        "Burmese",
+        "Thai",
+        "Laotian",
+        "Vietnamese",
+        "Cambodian",
+        "Malaysian",
+        "Singaporean",
+        "Indonesian",
+        "Filipino",
+        "Bruneian",
+        "Timorese"
+      ],
+      "relationships": []
+    },
+    "@INAM": {
+      "code": "@INAM",
+      "name": "Indigenous American",
+      "aliases": [
+        "Native American",
+        "Amerindian",
+        "Indigenous Mesoamerican",
+        "Indigenous Andean",
+        "Indigenous Caribbean",
+        "Indigenous Amazonean",
+        "Eskimo"
+      ],
+      "relationships": []
+    },
+    "@INSI": {
+      "code": "@INSI",
+      "name": "Indigenous Siberian",
+      "aliases": [
+        "Native Siberian",
+        "Tungusic",
+        "Chukotko-Kamchatkan",
+        "Samoyedic",
+        "Nivkh",
+        "Yukaghir",
+        "Ket"
+      ],
+      "relationships": []
+    },
+    "@IR": {
+      "code": "@IR",
+      "name": "Iranic",
+      "aliases": [
+        "Persian",
+        "Kurd",
+        "Pashtun",
+        "Baloch",
+        "Tajik",
+        "Ossetian",
+        "Lur",
+        "Gilak",
+        "Mazanderani",
+        "Talish",
+        "Yaghnobi",
+        "Pamiri",
+        "Zaza",
+        "Qashqai"
+      ],
+      "relationships": []
+    },
+    "@AR": {
+      "code": "@AR",
+      "name": "Arab",
+      "aliases": [
+        "Arabian",
+        "Levantine",
+        "North African",
+        "Assyrian",
+        "Yazidi",
+        "Mizrahi Jew",
+        "Berber",
+        "Egyptian",
+        "Mandaean",
+        "Samaritan",
+        "Druze"
+      ],
+      "relationships": []
+    },
+    "@TU": {
+      "code": "@TU",
+      "name": "Turkic",
+      "aliases": [
+        "Turk",
+        "Azerbaijani",
+        "Turkmen",
+        "Uzbek",
+        "Kazakh",
+        "Kyrgyz",
+        "Tatar",
+        "Bashkir",
+        "Chuvash",
+        "Uyghur",
+        "Karakalpak",
+        "Nogai",
+        "Kumyk",
+        "Karachay",
+        "Balkar",
+        "Khakas",
+        "Altai",
+        "Shor",
+        "Tofalars",
+        "Sakha",
+        "Dolgan",
+        "Tuvan"
+      ],
+      "relationships": []
+    },
+    "@INOC": {
+      "code": "@INOC",
+      "name": "Indigenous Oceanian",
+      "aliases": [
+        "Native Oceanian",
+        "Aboriginal",
+        "Melanesian",
+        "Polynesian",
+        "Micronesian",
+        "Papuan"
+      ],
+      "relationships": []
+    },
+    "@AF": {
+      "code": "@AF",
+      "name": "Sub-Saharan African",
+      "aliases": [
+        "African",
+        "Angolan",
+        "Beninese",
+        "Botswanan",
+        "Burundian",
+        "Cameroonian",
+        "Cape Verdean",
+        "Central African",
+        "Chadian",
+        "Comorian",
+        "Congolese",
+        "Djiboutian",
+        "Equatoguinean",
+        "Eritrean",
+        "Eswatinian",
+        "Swazi",
+        "Ethiopian",
+        "Gabonese",
+        "Gambian",
+        "Ghanaian",
+        "Guinean",
+        "Guinea-Bissauan",
+        "Ivorian",
+        "Kenyan",
+        "Lesothan",
+        "Liberian",
+        "Malagasy",
+        "Malawian",
+        "Malian",
+        "Mauritian",
+        "Mozambican",
+        "Namibian",
+        "Nigerien",
+        "Nigerian",
+        "Rwandan",
+        "São Toméan",
+        "Senegalese",
+        "Seychellois",
+        "Sierra Leonean",
+        "Somali",
+        "South African",
+        "South Sudanese",
+        "Tanzanian",
+        "Togolese",
+        "Ugandan",
+        "Zambian",
+        "Zimbabwean"
+      ],
+      "relationships": []
+    },
+    "@GY": {
+      "code": "@GY",
+      "name": "Gypsy",
+      "aliases": [],
+      "relationships": []
+    },
+    "@IN": {
+      "code": "@IN",
+      "name": "Indian",
+      "aliases": [
+        "Indian",
+        "Bangladeshi",
+        "Pakistani",
+        "Sri Lankan",
+        "Nepali",
+        "Bhutanese",
+        "Maldivian",
+        "Afghan",
+        "Bengali",
+        "Tamil",
+        "Desi",
+        "South Asian"
+      ],
+      "relationships": []
+    }
+  }
+}
